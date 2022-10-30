@@ -1,0 +1,139 @@
+\documentclass[]{article}
+
+\usepackage{paracol,lipsum}
+\usepackage{verse}
+\usepackage[margin=.2in]{geometry}
+\usepackage{tasks}
+\usepackage{exsheets}
+\SetupExSheets[question]{type=exam}
+
+\usepackage{amssymb,latexsym}
+\usepackage{amsmath,amsbsy,bbm}
+\usepackage{epsfig,bm,color}
+\usepackage{cjhebrew}
+\usepackage{nicefrac}
+\usepackage{graphicx,comment}
+\usepackage{slashed}
+%\usepackage{hyperref}
+\unitlength=1mm
+
+\usepackage{dutchcal}
+
+\usepackage{calligra}
+
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scriptr}{\mathcalligra{r}\,}
+\newcommand{\boldscriptr}{\pmb{\mathcalligra{r}}\,}
+
+\def\eqref#1{{(\ref{#1})}}
+
+\newcommand{\caf}{\text{\cjRL{b}}}
+\newcommand{\he}{${}^4$He}
+\newcommand{\hes}{${}^3$He}
+\newcommand{\tr}{${}^3$H}
+\newcommand{\ls}{\ve{L}\cdot\ve{S}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\as}{a_s}
+\newcommand{\at}{a_t}
+\newcommand{\ecm}{E_\textrm{\small c.m.}}
+\newcommand{\dq}{\mbox{d\hspace{-.55em}$^-$}}
+\newcommand{\mpis}{$m_\pi=137~${\small MeV}}
+\newcommand{\mpim}{$m_\pi=450~${\small MeV}}
+\newcommand{\mpil}{$m_\pi=806~${\small MeV}}
+\newcommand{\muh}{\mu_{^3\text{\scriptsize He}}}
+\newcommand{\mut}{\mu_{^3\text{\scriptsize H}}}
+\newcommand{\mud}{\mu_\text{\scriptsize D}}
+\newcommand{\pode}{\beta_{\text{\scriptsize D},\pm1}}
+\newcommand{\poh}{\beta_{^3\text{\scriptsize He}}}
+\newcommand{\pot}{\beta_{^3\text{\scriptsize H}}}
+\newcommand{\com}[1]{{\scriptsize \sffamily \bfseries \color{red}{#1}}}
+\newcommand{\eg}{\textit{e.g.}\;}
+\newcommand{\ie}{\textit{i.e.}\;}
+\newcommand{\cf}{\textit{c.f.}\;}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\la}{\label}
+\newcommand{\ber}{\begin{eqnarray}}
+\newcommand{\eer}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\thalf}{\nicefrac[]{3}{2}}
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\beq}{\begin{align}}
+\newcommand{\eeq}{\end{align}}
+\newcommand{\bk}{\bs k}
+\newcommand{\bt}{B_{^{3}\text{H}}}
+\newcommand{\bh}{B_{^{3}\text{He}}}
+\newcommand{\bd}{B_\text{D}}
+\newcommand{\ba}{B_\alpha}
+\newcommand{\rgm}{$\mathbb{R}$GM}
+\newcommand{\ev}[1] {|\bra #1  \ket |^2}
+\newcommand{\lam}[1]{$\Lambda=#1~$fm$^{-1}$}
+\newcommand{\parg}[1] {\paragraph*{-\,\textit{#1}\,-}}
+\newcommand{\nopi}{\pi\hspace{-6pt}/}
+\newcommand{\ve}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\xvec}{\bs{x}}
+\newcommand{\rvec}{\bs{r}}
+\newcommand{\sgve}{\ensuremath{\boldsymbol{\sigma}}}
+\newcommand{\tave}{\ensuremath{\boldsymbol{\tau}}}
+\newcommand{\na}{\nabla}
+\newcommand{\bra}{\langle}
+\newcommand{\ket}{\rangle}
+\newcommand{\tx}{\tilde{x}}
+\newcommand{\eftnopi}{\mbox{EFT($\slashed{\pi}$)}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\drei}[1]{\delta^{(3)}\!\left(#1\right)}
+\newcommand{\ddrei}[1]{\delta_{\tiny \Lambda}^{(3)}\!\left(#1\right)}
+
+\newcommand{\ecce}[2]{\paragraph*{Ecce: #1}\texttt{\textcolor{blue}{#2}}}
+
+\newcommand{\tqt}[1]{\begin{flushleft}---\textquotedblleft\textit{#1}\textquotedblright\par\end{flushleft}}
+\newcommand{\attrib}[1]{%
+\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtitlefont}{\normalfont\large\itshape\centering\bf}
+
+\begin{document}
+\columnratio{0.5}
+\begin{paracol}{2}
+
+\subsection*{\small \today}
+\tqt{What I tell my niece.}
+The mutual attraction between two or more objects does not guarantees that they ``end up'' --
+which means after a sufficiently long time during which all transients of the initial encounter
+equilibrated -- in a stable, localized state. Their paths through the world may still diverge and
+never overlap despite affectionate meetings for some finite intervals.
+
+Now, can {\it you} predict whether or not this behaviour pertains to any number of objects of this
+kind? To give you some examples, although two planets attract each other gravitationally, they might
+pass each other and end up in different corners of our universe. Is that scenario possible also for
+the entirety of all planets, stars, point-like-on-astronomical-scales masses, \ie, is Newtonian
+gravity consistent with an ever expanding universe, or does it demand its eventual collapse?
+Secondly, a man and a women meet late at night in the swimming pool of a hotel in Manchester,
+the rain knocks steadily against the glass roof, the blue tiles reflect only few rays of light, and
+the atmosphere conveys a feeling of security in light of a harsh nature. The two talk, they experienced
+similar things up to this point, they were both not born in England and communicate with each other not
+in their mother tongue.
+\switchcolumn
+
+\subsection*{\small What I tell a machine.}
+\begin{gather}
+m_i\ddot{\ve{x}}_i=
+\end{gather}
+\begin{question}
+Does an unbounded trajectory exist for any number of particles whose
+mutual interaction does allow for such an unstable state?
+\begin{tasks}
+\task Put the system in a ``Fermi'' box.
+\task Put that box into a gravitational background field whose centre is identical with that of the box.
+\task Let the particles be connected to each other via springs,\ie , assume a
+ harmonic-oscillator interaction.
+\end{tasks}
+\end{question}
+\end{paracol}
+
+\end{document}
